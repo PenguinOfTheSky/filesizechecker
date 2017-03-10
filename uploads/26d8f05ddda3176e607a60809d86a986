@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Lycelia</title>
+  <link rel="shortcut icon" type="image/x-icon" href="2016/favicon.ico" />
+  <link rel="stylesheet" type="text/css" href="2016/index.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="2016/index.js"></script>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-7s5uDGW3AHqw6xtJmNNtr+OBRJUlgkNJEo78P4b0yRw= sha512-nNo+yCHEyn0smMxSswnf/OnX6/KwJuZTlNZBjauKhTK0c+zT+q5JOCx0UFhXQ6rJR9jg6Es8gPuD2uZcYDLqSw=="
+  crossorigin="anonymous">
+        <script src="http://www.babylonjs.com/cannon.js"></script>
+        <script src="http://www.babylonjs.com/babylon.js"></script>
+</head>
+  
+<body>
+
+
+<template id = 'main'>
+  <style>
+
+  </style>
+<div style ='text-align: center; display: inline-block; margin 0 auto;  margin-top: 5px; position: relative; z-index: 1' class = 'main'>
+      <span style="font-family:Verdana; font-size: 36px;color:red; margin: 1px auto;"> <i>Lycelia  Studios</i></span><br>
+      <span style="font-family: 'Courier New'; color:#CDCDFF; font-size: 18px; margin: 1px auto; ">Programming Solutions</span>
+ </div>
+
+
+</template>
+<template id = 'about'>
+  
+</template>
+
+<template id = 'games'>
+<style scoped>
+#gameList {
+background-color: #DFDDDF;
+}
+</style>
+<div id = 'gameList' class = 'Games' style='position:relative; z-index: 1'>
+<p style='font-size: 21px'>
+Check out <a href='https://cardicus.herokuapp.com/'><b>Cardicus</b></a>, currently in Alpha release.
+</p> 
+</div>
+</template>
+  
+
+
+<!-- Begin Main Doc -->
+<canvas id = "renderCanvas" style ='height: 100%; width: 100%; position: fixed; z-index = -1'></canvas> 
+<div class="container-fluid cherry" style = 'width: 100%;position: relative; z-index: 1'>
+    <div class='row' style = 'background-color: #212121; height: 40px'>
+      <div class='col-xs-12 col-sm-10 col-md-8' style="margin: 10px auto; margin-top: 5px; font-size: 18px">
+        <div class='row'>
+          <div class='col-xs-4'>
+            <img src='2016/favicon.ico' id = 'logo'><span style = 'font-size: 21px; color: #FAFAFA; display:'inline-block'> &nbsp; Lycelia</span>
+          </div>
+          <div class='col-xs-8' style='text-align:right; color: #FAFAFA;'>
+            <button onclick='' class='riotbtn home'>Home</button>
+            <button onclick='' class='riotbtn about'>About</button>
+            <button onclick='' class='riotbtn games'>Games</button>
+            <button onclick='' class='riotbtn music'></button>
+            <button onclick='' class='riotbtn facebook'></button>
+            <button onclick='' class='riotbtn insta'></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+</div>
+
+
+</body>
+
+</html>
+
+
+
+<template id = 'FCC' >
+  <div class="col-xs-12 FCC" id = 'about-container' style='width: 100%;height:100%;padding: 5px;'>
+
+  <div class="" style = 'text-align:center; '>
+      <h2 style = 'color: #FFF;'>Contact Information</h2>
+      <p>
+      <span style='font-size:18px;color: #FFF;'><b> Email: Dune-planet@hotmail.com </b></span>
+      </p>
+<br>
+      <button class="btn " style="background-color: #EEEEEE; border-style: solid; border-color: #000000; border-size:2px;" onclick="location.href='https://www.hackerrank.com/Bombadilo101'">
+        <h4><img src="https://media.licdn.com/mpr/mpr/shrink_100_100/AAEAAQAAAAAAAALKAAAAJDA4MmZmMGQ1LTMzZjUtNDViYi05OTc1LTNlZWEyMTA2YmExMg.png" class="img img-responsive" style = "width:16px;float:left;"> HackerRank</h4></button>
+      <button class="btn " style="background-color: #EEEEEE; border-style: solid; border-color: #000000; border-size:2px;" onclick="location.href='https://github.com/PenguinOfTheSky'">
+        <h4> <i  class="fa fa-github-alt"></i> Github</h4></button>
+      <button class="btn " style="background-color: #EEEEEE; border-style: solid; border-color: #000000; border-size:2px;" onclick="location.href='https://www.linkedin.com/in/trey-russell-4a3314107?trk=nav_responsive_tab_profile'">
+        <h4> <i  class="fa fa-linkedin-square"></i> LinkedIn</h4></button>
+      <button class="btn " style="background-color: #EEEEEE; border-style: solid; border-color: #000000; border-size:2px;" onclick="location.href='http://www.freecodecamp.com/penguinofthesky'">
+        <h4><img src="data:image/png;base64,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" class="img img-responsive" style = "width:16px;float:left;">   FreeCodeCamp</h4></button>
+<br>
+      <hr style="width: 60%; color: #8888FF; margin: 1px auto;">
+
+
+  </div>
+  <div class='row'>
+  <div class='col-xs-12 col-md-6'>
+      <h1 style="text-align:center;color:#FFF;">Lycelia Web Design Studio</h1>
+      <p style="color:#FFF">I am a self-taught programmer, developer, writer, and entrepreneur. I'm currently open for freelance and full-time work.</p>
+      <p style="color:#FFF"><b style= 'font-size: 18px;'>Experienced in:</b>
+        <ul style="color:#FFF; font-size: 16px; columns: 2;  -webkit-columns: 2;
+  -moz-columns: 2;">
+          <li>HTML</li>
+          <li>CSS/CSS3</li>
+          <li>Bootstrap</li>
+          <li>Javascript</li>
+          <li>Jquery</li>
+          <li>Template Web Components</li>
+          <li> Riot.js (React/redux alternative) </li>
+          <li> MongoDB </li>
+          <li> Node </li>
+          <li> Express.js </li>
+          <li> Git  </li>
+          <li> Babylon.js 3D Engine </li>
+        </ul>
+      </p>
+ </div>
+  <div class="col-xs-12 col-md-6" id="div4" style=''>
+    <h1 style="font-size:48px;text-align:center;color:#F3FFF3;font-family:'Times New Roman'">Portfolio of Recent Projects</h1>
+
+         <ul style="color:#F3DDFF;font-size: 14px;">
+           <li> <a href="http://codepen.io/PenguinOfTheSky/full/XXBOOx/" target="_blank " ><span class = 'linker'
+>Minimax tic-tac-toe</span></a><br> </li>
+           <li> <a href="http://codepen.io/PenguinOfTheSky/full/GoMZpP/" target="_blank " ><span class = 'linker'
+>Javascript calculator</span></a><br> </li>
+          <li>  <a href="http://codepen.io/PenguinOfTheSky/full/dGdraQ/ " target="_blank " ><span class = 'linker'
+>Wikipedia viewer</span></a><br> </li>
+           <li> <a href="http://codepen.io/PenguinOfTheSky/full/vLVgjG/" target="_blank" ><span class = 'linker'
+>Simon game</span></a><br> </li>
+          <li>  <a href="http://codepen.io/PenguinOfTheSky/full/vLdKEa/" target="_blank"><span class = 'linker'
+>Weather app</span></a><br> </li>
+          <li>  <a href="http://codepen.io/PenguinOfTheSky/full/EPvoOW/" target="_blank" ><span class = 'linker'
+>Random quotes machine</span></a><br> </li>
+         </ul>
+  </div>
+  </div>
+
+
+  </div>
+</template>

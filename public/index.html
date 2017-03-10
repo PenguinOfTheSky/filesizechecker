@@ -1,0 +1,26 @@
+<body>
+  Upload File to check size in bytes <input type='file' id = 'file' name = 'upl'>
+  Refresh page to upload new file.
+  <button id = 'send'> Submit</button>
+  <p id = 'output'> </p>
+
+<script>
+'use strict'
+let aFile = new FormData()
+document.querySelector('#send').onclick = function() {
+  aFile.append('userFile', document.querySelector('#file').files[0])
+let sendFile = new XMLHttpRequest();
+sendFile.open('POST', '/sendFile', 1);
+sendFile.send(aFile);
+sendFile.onreadystatechange = function () {
+  if (sendFile.readyState === 4) {
+    if (sendFile.status === 200) {
+      document.querySelector('#output').innerHTML = (sendFile.responseText) ;
+    } else {
+      console.log('Error: ' + sendFile.status);
+    }
+  };
+}
+}
+</script>
+</body>
